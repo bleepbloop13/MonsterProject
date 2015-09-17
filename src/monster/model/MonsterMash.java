@@ -52,6 +52,7 @@ public class MonsterMash
 	{
 		return monsterBellyButton;
 	}
+	
 	public void setMonsterName(String monsterName)
 	{
 		this.monsterName = monsterName;
@@ -81,6 +82,7 @@ public class MonsterMash
 	{
 		this.monsterBellyButton = monsterBellyButton;
 	}
+	
 	public String toString()
 	{
 		String monsterInfo = " My monster has " + monsterLegs + " legs and his name is " + monsterName + " and he has " +

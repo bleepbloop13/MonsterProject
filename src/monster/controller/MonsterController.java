@@ -26,12 +26,8 @@ public class MonsterController
 		roryMonster = new MonsterMash(name, eyes, mouth, legs, hair, hasbellybutton);
 	}
 	public void start()
-	{
+	{	
 		myDisplay.displayInfo(roryMonster.toString());
-		askQuestions();
-		myDisplay.displayInfo(" Updated monster info: " + roryMonster.toString());
-		
-		myDisplay.displayInfo(userMonster.toString());
 		createUserMonster();
 		myDisplay.displayInfo(" Here's the info for your monster : " + userMonster.toString());
 	}

@@ -28,7 +28,7 @@ public class MonsterController
 	public void start()
 	{	
 		myDisplay.displayInfo(roryMonster.toString());
-		createUserMonster();
+		createPopupMonster();
 		myDisplay.displayInfo(" Here's the info for your monster : " + userMonster.toString());
 	}
 	
@@ -86,5 +86,25 @@ public class MonsterController
 		
 		//Step two: Build the monster using the constructor.
 		userMonster = new MonsterMash(userName,userEyes, userMouths, userLegs, userHair, userHasBellyButton);
+	}
+	
+	
+	private void createPopupMonster()
+	{
+		String name = myDisplay.getAnswer("Type in a name for your monster.");
+		
+		myDisplay.displayResponse("You typed in " + name);
+		
+		int mouth;
+		String tempMouths = myDisplay.getAnswer("Type in an integer for the number of mouths he has");
+		
+		while(!isInteger(tempMouths))
+		{
+			tempMouths = myDisplay.getAnswer("Please type in a proper integer!");
+		}
+		
+		
+		
+				
 	}
 }
